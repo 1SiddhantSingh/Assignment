@@ -46,7 +46,7 @@ const authSlice = createSlice({
       state.error = null;
     },
     signup: (state, action: PayloadAction<{ username: string; password: string }>) => {
-      const { username, password } = action.payload;
+      const { username } = action.payload;
       // Simulate signup logic (client-side)
       state.user = { username };
       state.error = null;
